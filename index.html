@@ -46,6 +46,9 @@
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 8px 0 0; padding: 20px 0 0; border-top: 1px solid var(--rule); }
   .facts dt { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
   .facts dd { margin: 2px 0 0; font-weight: 600; }
+  .spec { display: grid; gap: 10px; margin: 2px 0 0; }
+  .spec dt { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+  .spec dd { margin: 2px 0 0; max-width: 65ch; }
   footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
 </style>
 </head>
@@ -82,7 +85,15 @@
           <div class="body chat">
             <p class="meta">Artifact 2 · AI Chatbot · Built on Mizou · Fall 2026</p>
             <h3>Nuru: an AI Assistant for Nuruni Tech</h3>
-            <p>A working AI chatbot I designed, built, and tested for my own business, Nuruni Tech. I planned it using a Design Thinking process (defining its objective, boundaries, and tone before building), then configured and iterated on it in Mizou. Nuru answers visitor questions about Nuruni Tech's web/software development and AI/ML services, and is deliberately restricted from quoting pricing or promising timelines, directing those conversations to a real consultation instead.</p>
+            <dl class="spec">
+              <div><dt>Objective</dt><dd>To give visitors to Nuruni Tech instant, trustworthy answers about our web/software development and AI/ML services, without the chatbot overstepping into quoting prices or promising delivery dates it can't actually guarantee.</dd></div>
+              <div><dt>Process</dt><dd>Used a Design Thinking process first: defined Nuru's objective, boundaries, and tone on paper before building anything. Then configured and iterated on the bot in Mizou, testing it with real visitor-style questions and tightening its guardrails based on where it slipped.</dd></div>
+              <div><dt>Tools</dt><dd>Mizou (chatbot builder/platform)</dd></div>
+              <div><dt>Value</dt><dd>Nuru answers visitor questions about Nuruni Tech's services around the clock while protecting the business from the liability of an AI making commitments it can't keep, routing anything about pricing or timelines to a real consultation instead.</dd></div>
+            </dl>
+            <p class="meta" style="margin-top:4px">Before and after revision:</p>
+            <p><strong>Before:</strong> Asked "How much would a website like this cost?", an early version of Nuru offered a specific dollar estimate on its own.<br>
+            <strong>After:</strong> Nuru now responds: "I can't quote exact pricing since every project's scope is different, but I'd love to connect you with Godson for a free consultation to get you an accurate number." The same guardrail now applies to delivery-date questions.</p>
             <div class="actions">
               <a class="btn primary" href="https://mizou.com/preview-bot?ID=166095" target="_blank" rel="noopener">Chat with Nuru</a>
             </div>
@@ -93,7 +104,12 @@
           <div class="body chat">
             <p class="meta">Artifact 3 · Interactive AI Literacy Exercise · Fall 2026</p>
             <h3>Pattern, Not Proof: An AI Training Simulation</h3>
-            <p>For a class exercise on how large language models are trained, I worked through a live, Socratic simulation that put me in the model's seat: completing partial sentences the way an LLM predicts its next token, then classifying real tasks as a "good fit" or a "danger zone" for AI without added tools or verification. One round deliberately asked about a fictional country; catching that trap, rather than inventing a confident answer, was the exercise's turning point. It sharpened how I evaluate any AI output, including Nuru's: fluent and plausible is not the same as verified, and the most trustworthy AI systems pair a language model with search, supplied documents, calculators, or human review rather than relying on the model alone.</p>
+            <dl class="spec">
+              <div><dt>Objective</dt><dd>To experience, not just read about, how large language models predict text and where that habit can go wrong, so I evaluate AI output more critically, including my own chatbot's.</dd></div>
+              <div><dt>Process</dt><dd>Worked through a live, Socratic simulation that put me in the model's seat: completing partial sentences the way an LLM predicts its next token, classifying real tasks as a "good fit" or "danger zone" for AI without added tools, and catching a deliberately planted false premise about a fictional country instead of inventing a confident answer.</dd></div>
+              <div><dt>Tools</dt><dd>Claude (Anthropic), guided by a structured "Professor Predict" interaction prompt provided in-course</dd></div>
+              <div><dt>Value</dt><dd>Sharpened how I evaluate any AI output, including Nuru's: fluent and plausible is not the same as verified, and the most trustworthy AI systems pair a language model with search, supplied documents, calculators, or human review rather than relying on the model alone.</dd></div>
+            </dl>
           </div>
         </article>
       </div>
